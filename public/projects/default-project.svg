@@ -1,0 +1,21 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1120" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#312E81"/>
+      <stop offset="1" stop-color="#0B1026"/>
+    </linearGradient>
+    <linearGradient id="card" x1="170" y1="120" x2="1030" y2="580" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F46E5" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#06B6D4" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" rx="24" fill="url(#bg)"/>
+  <rect x="90" y="90" width="1020" height="520" rx="20" fill="#0F173A" stroke="#818CF8" stroke-opacity="0.35"/>
+  <rect x="130" y="130" width="940" height="230" rx="14" fill="url(#card)"/>
+  <rect x="130" y="390" width="450" height="180" rx="14" fill="#141D45"/>
+  <rect x="620" y="390" width="450" height="180" rx="14" fill="#141D45"/>
+  <circle cx="190" cy="190" r="10" fill="#22C55E"/>
+  <circle cx="225" cy="190" r="10" fill="#F59E0B"/>
+  <circle cx="260" cy="190" r="10" fill="#EF4444"/>
+  <text x="130" y="78" fill="#C7D2FE" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Project Preview</text>
+</svg>
