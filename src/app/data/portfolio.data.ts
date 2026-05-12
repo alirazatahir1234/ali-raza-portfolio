@@ -275,15 +275,25 @@ export const PORTFOLIO_DATA: PortfolioData = {
     heading: "Let's work together!",
     blurb:
       'Open to senior .NET full-stack roles, enterprise consulting and AI-enabled product engineering opportunities.',
+    phoneSectionTitle: 'My Phone Numbers',
+    phones: [
+      { display: '+92301-6169209', href: 'tel:+923016169209' },
+      { display: '+92317-7368305', href: 'tel:+9233177368305' }
+    ],
+    emailSectionTitle: 'Email Address',
+    email: {
+      display: 'Ali.raza.tahir@hotmail.com',
+      href: 'mailto:Ali.raza.tahir@hotmail.com'
+    },
     links: [
-      { label: 'Email Me', href: 'mailto:ali.raza.tahir@hotmail.com' },
+      { label: 'Email Me', href: 'mailto:Ali.raza.tahir@hotmail.com' },
       { label: 'Download CV', href: '/Ali-Raza-Tahir-Resume.pdf' }
     ],
     socialLinks: [
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ali-raza-tahir-0601b21ab/' },
       { label: 'GitHub', href: 'https://github.com/alirazatahir1234' },
       { label: 'WhatsApp', href: 'https://wa.me/923016169209' },
-      { label: 'Email', href: 'mailto:ali.raza.tahir@hotmail.com' }
+      { label: 'Email', href: 'mailto:Ali.raza.tahir@hotmail.com' }
     ]
   },
   seo: {

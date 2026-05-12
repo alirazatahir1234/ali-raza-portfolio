@@ -59,9 +59,23 @@ export interface ContactLink {
   href: string;
 }
 
+export interface ContactPhone {
+  display: string;
+  href: string;
+}
+
+export interface ContactEmail {
+  display: string;
+  href: string;
+}
+
 export interface ContactData {
   heading: string;
   blurb: string;
+  phoneSectionTitle: string;
+  phones: ContactPhone[];
+  emailSectionTitle: string;
+  email: ContactEmail;
   links: ContactLink[];
   socialLinks: ContactLink[];
 }
