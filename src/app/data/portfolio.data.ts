@@ -3,11 +3,11 @@ import { PortfolioData } from '../models/portfolio.model';
 export const PORTFOLIO_DATA: PortfolioData = {
   hero: {
     name: 'Ali Raza Tahir',
-    title: 'Senior Full-Stack .NET Developer',
+    title: 'Lead Full Stack Engineer',
     intro: "Hi, I'm",
     tagline:
-      '7+ years of experience designing, developing and deploying enterprise-grade applications using .NET 8, microservices, Angular/React and Azure.',
-    badges: ['.NET 8', 'Microservices', 'Azure', 'Angular', 'React', 'AI/ML'],
+      '7+ years of experience building secure, scalable payroll and payment platforms using Go, .NET 8, Vue.js, Angular, React.js, microservices and Azure cloud-native architectures.',
+    badges: ['Go (Golang)', 'Vue.js', 'Angular', 'React.js', 'Azure', '.NET 8'],
     stats: [
       { label: 'Years Experience', value: '7+' },
       { label: 'Projects Completed', value: '20+' },
@@ -23,17 +23,19 @@ export const PORTFOLIO_DATA: PortfolioData = {
   about: {
     heading: 'About Me',
     description:
-      'Senior .NET Full Stack Developer with 7+ years of experience building secure, high-performance enterprise systems across fintech, government and enterprise domains.',
+      'Lead Full Stack Engineer with 7+ years of experience building secure, scalable payroll and payment platforms across fintech, government and enterprise domains.',
     highlights: [
-      'Specialized in .NET Core / .NET 8, C#, ASP.NET Core, Angular, React.js and Blazor.',
+      'Specialized in Go (Golang), .NET Core / .NET 8, C#, Vue.js, Angular, React.js and Blazor.',
+      'Deep fintech expertise: payroll processing, accounts payable automation and PCI DSS-compliant payment platforms.',
       'Hands-on expertise with microservices, gRPC, REST APIs and service-to-service integration.',
       'Cloud-native delivery on Azure and AWS with Docker, Kubernetes and CI/CD pipelines.',
-      'Strong background in SQL Server, Oracle and PostgreSQL optimization for enterprise workloads.',
       'Implemented secure auth and RBAC systems using OAuth, JWT and EIDA-based OTP workflows.',
-      'Currently focused on AI integrations using OpenAI, Python and Azure AI services.'
+      'Strong background in SQL Server, Oracle and PostgreSQL optimization for high-volume transactional workloads.'
     ]
   },
   skills: [
+    { name: 'Go (Golang)' },
+    { name: 'Vue.js' },
     { name: 'C#' },
     { name: '.NET Core' },
     { name: '.NET 8' },
@@ -215,10 +217,10 @@ export const PORTFOLIO_DATA: PortfolioData = {
   experience: [
     {
       period: 'Jan 2025 - Present',
-      title: 'Software Engineer',
-      company: 'Abu Dhabi Ports (UAE)',
+      title: 'Lead Full Stack Engineer',
+      company: 'Abu Dhabi Ports (Remote)',
       details:
-        'Developing microservices-based .NET 8 APIs, Angular frontend modules and secure enterprise integrations with Azure deployment and CI/CD.'
+        'Leading development of secure, scalable microservices platforms using Go, .NET 8, Vue.js and Angular with Azure cloud deployment, CI/CD automation and enterprise-grade payment and workflow integrations.'
     },
     {
       period: 'May 2023 - Feb 2025',
@@ -232,7 +234,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
       title: 'Software Engineer',
       company: 'EBizCharge (Remote)',
       details:
-        'Built high-volume accounts payable automation platform with microservices, gRPC, Blazor/Telerik UI and PCI DSS compliant fintech features.'
+        'Designed and built a secure, high-volume payroll and accounts payable payment platform using Go microservices, gRPC and PCI DSS-compliant fintech architecture with Blazor/Telerik UI.'
     },
     {
       period: 'May 2022 - Dec 2022',
@@ -274,7 +276,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
   contact: {
     heading: "Let's work together!",
     blurb:
-      'Open to senior .NET full-stack roles, enterprise consulting and AI-enabled product engineering opportunities.',
+      'Open to Lead Full Stack Engineer roles focused on secure payroll, payment platforms and cloud-native systems using Go, Vue.js and .NET.',
     phoneSectionTitle: 'My Phone Numbers',
     phones: [
       { display: '+92301-6169209', href: 'tel:+923016169209' },
@@ -297,9 +299,9 @@ export const PORTFOLIO_DATA: PortfolioData = {
     ]
   },
   seo: {
-    title: 'Ali Raza Tahir | Senior Full-Stack .NET Developer',
+    title: 'Ali Raza Tahir | Lead Full Stack Engineer',
     description:
-      'Portfolio of Ali Raza Tahir, Senior .NET Full Stack Developer with 7+ years in enterprise systems, microservices, cloud and AI integrations.',
+      'Portfolio of Ali Raza Tahir, Lead Full Stack Engineer with 7+ years building secure payroll and payment platforms using Go, Vue.js, .NET 8, microservices and cloud-native architectures.',
     image: '/profile.png',
     url: 'https://www.linkedin.com/in/ali-raza-tahir-0601b21ab/'
   }
