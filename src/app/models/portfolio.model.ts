@@ -10,6 +10,12 @@ export interface HeroData {
   contactHref: string;
   availability: string;
   profileImage: string;
+  featuredCertificate?: {
+    title: string;
+    issuer: string;
+    previewImage: string;
+    pdfUrl: string;
+  };
 }
 
 export interface AboutData {
@@ -82,6 +88,10 @@ export interface ContactData {
 
 export interface CertificationData {
   name: string;
+  issuer?: string;
+  issued?: string;
+  previewImage?: string;
+  pdfUrl?: string;
 }
 
 export interface SeoData {

@@ -3,13 +3,13 @@ import { PortfolioData } from '../models/portfolio.model';
 export const PORTFOLIO_DATA: PortfolioData = {
   hero: {
     name: 'Ali Raza Tahir',
-    title: 'Lead Full Stack Engineer',
+    title: 'Lead Full Stack .NET Engineer',
     intro: "Hi, I'm",
     tagline:
-      '7+ years of experience building secure, scalable payroll and payment platforms using Go, .NET 8, Vue.js, Angular, React.js, microservices and Azure cloud-native architectures.',
-    badges: ['Go (Golang)', 'Vue.js', 'Angular', 'React.js', 'Azure', '.NET 8'],
+      '8+ years of experience building secure, scalable payroll, payment and fleet platforms with .NET 8 / ASP.NET Core, C#, AI integration, Angular, Vue.js, Flutter, Go, microservices and Azure cloud-native architectures.',
+    badges: ['.NET 8', 'ASP.NET Core', 'C#', 'AI Integration', 'Angular', 'Flutter', 'Azure'],
     stats: [
-      { label: 'Years Experience', value: '7+' },
+      { label: 'Years Experience', value: '8+' },
       { label: 'Projects Completed', value: '20+' },
       { label: 'Followers', value: '1,995+' },
       { label: 'GitHub Repos', value: '18' }
@@ -18,31 +18,46 @@ export const PORTFOLIO_DATA: PortfolioData = {
     resumeHref: '/Ali-Raza-Tahir-Resume.pdf',
     contactHref: '#contact',
     availability: 'Available for Opportunities',
-    profileImage: '/profile.png'
+    profileImage: '/profile.png',
+    featuredCertificate: {
+      title: 'Certificate of Appreciation',
+      issuer: 'Ministry of Human Resources and Emiratisation',
+      previewImage: '/certificates/appreciation-certificate-preview.jpg',
+      pdfUrl: '/certificates/Appreciation-Certificate.pdf'
+    }
   },
   about: {
     heading: 'About Me',
     description:
-      'Lead Full Stack Engineer with 7+ years of experience building secure, scalable payroll and payment platforms across fintech, government and enterprise domains.',
+      'Lead Full Stack .NET Engineer with 8+ years of experience building secure, scalable payroll, payment and fleet platforms across fintech, government and enterprise domains — specializing in .NET 8, ASP.NET Core and C# with AI-assisted workflows and production Flutter mobile apps.',
     highlights: [
-      'Specialized in Go (Golang), .NET Core / .NET 8, C#, Vue.js, Angular, React.js and Blazor.',
+      'Primary stack: .NET Core / .NET 8, ASP.NET Core, C#, Blazor, Dapper / Entity Framework and SQL Server.',
+      'Also strong in Angular, Vue.js, React.js, Flutter, Go (Golang) and Azure cloud-native delivery.',
+      'AI integration experience: LLM/provider APIs, AI copilots, OCR document extraction and intelligent automation in SaaS and fleet platforms.',
+      'Built Flutter fleet and driver apps (Riverpod, Dio, Firebase, Google Maps, SignalR) for multi-tenant travel operations.',
       'Deep fintech expertise: payroll processing, accounts payable automation and PCI DSS-compliant payment platforms.',
       'Hands-on expertise with microservices, gRPC, REST APIs and service-to-service integration.',
       'Cloud-native delivery on Azure and AWS with Docker, Kubernetes and CI/CD pipelines.',
-      'Implemented secure auth and RBAC systems using OAuth, JWT and EIDA-based OTP workflows.',
-      'Strong background in SQL Server, Oracle and PostgreSQL optimization for high-volume transactional workloads.'
+      'Implemented secure auth and RBAC systems using OAuth, JWT and EIDA-based OTP workflows.'
     ]
   },
   skills: [
-    { name: 'Go (Golang)' },
-    { name: 'Vue.js' },
-    { name: 'C#' },
-    { name: '.NET Core' },
     { name: '.NET 8' },
+    { name: '.NET Core' },
     { name: 'ASP.NET Core' },
-    { name: 'Angular' },
-    { name: 'React.js' },
+    { name: 'C#' },
     { name: 'Blazor' },
+    { name: 'Entity Framework' },
+    { name: 'Dapper' },
+    { name: 'Angular' },
+    { name: 'Vue.js' },
+    { name: 'React.js' },
+    { name: 'Flutter' },
+    { name: 'Dart' },
+    { name: 'Go (Golang)' },
+    { name: 'AI Integration' },
+    { name: 'LLM APIs' },
+    { name: 'OCR / Document AI' },
     { name: 'Microservices' },
     { name: 'gRPC' },
     { name: 'REST APIs' },
@@ -53,13 +68,24 @@ export const PORTFOLIO_DATA: PortfolioData = {
     { name: 'AWS' },
     { name: 'Docker' },
     { name: 'Kubernetes' },
-    { name: 'Dapper' },
     { name: 'CQRS' },
     { name: 'Clean Architecture' },
     { name: 'OAuth / JWT' },
     { name: 'CI/CD' }
   ],
   projects: [
+    {
+      title: 'SheikhGo Fleet & Driver (Flutter)',
+      summary:
+        'Own-product Flutter mobile apps for multi-tenant fleet operations: role-based dashboards, AI Copilot, live GPS maps, trip workflows, attendance, fuel capture, inspections, biometric auth, offline cache and real-time SignalR updates against a shared ASP.NET Core API.',
+      tech: ['Flutter', 'Dart', 'AI Copilot', 'Riverpod', 'Firebase', 'Google Maps', 'SignalR'],
+      githubUrl: 'https://github.com/alirazatahir1234/Sheikh-Travel-System',
+      repoName: 'Sheikh-Travel-System / sheikhGo-Fleet & sheikh-driver',
+      imageUrl: '/projects/sheikh-travel.svg',
+      status: 'In Progress',
+      liveDemoUrl: 'https://www.sheikhgo.com/',
+      caseStudyUrl: 'https://github.com/alirazatahir1234/Sheikh-Travel-System'
+    },
     {
       title: 'TechBirdsFly',
       summary:
@@ -72,14 +98,15 @@ export const PORTFOLIO_DATA: PortfolioData = {
       caseStudyUrl: 'https://github.com/alirazatahir1234/TechBirdsFly'
     },
     {
-      title: 'Sheikh Travel System',
+      title: 'Sheikh Travel System (ERP + API)',
       summary:
-        'Travel management system project with booking-oriented workflow modules and modern TypeScript-based frontend architecture.',
-      tech: ['TypeScript', 'Web App', 'Travel Domain', 'UI Modules'],
+        'Own product: multi-tenant fleet and travel operations platform with Angular ERP, ASP.NET Core APIs, AI Copilot / OCR document extraction, GPS/Traccar integration and Flutter field apps for drivers and fleet staff.',
+      tech: ['Angular', '.NET 8', 'AI Integration', 'Flutter', 'OCR', 'SignalR'],
       githubUrl: 'https://github.com/alirazatahir1234/Sheikh-Travel-System',
       repoName: 'Sheikh-Travel-System',
       imageUrl: '/projects/sheikh-travel.svg',
-      status: 'Case Study',
+      status: 'Live',
+      liveDemoUrl: 'https://www.sheikhgo.com/',
       caseStudyUrl: 'https://github.com/alirazatahir1234/Sheikh-Travel-System'
     },
     {
@@ -211,7 +238,11 @@ export const PORTFOLIO_DATA: PortfolioData = {
   ],
   certifications: [
     {
-      name: 'Certificate of Appreciation - Ministry of Human Resources and Emiratisation (14 Jul 2024)'
+      name: 'Certificate of Appreciation',
+      issuer: 'Ministry of Human Resources and Emiratisation (UAE)',
+      issued: '30 Sep 2025',
+      previewImage: '/certificates/appreciation-certificate-preview.jpg',
+      pdfUrl: '/certificates/Appreciation-Certificate.pdf'
     }
   ],
   experience: [
@@ -220,7 +251,14 @@ export const PORTFOLIO_DATA: PortfolioData = {
       title: 'Lead Full Stack Engineer',
       company: 'Abu Dhabi Ports (Remote)',
       details:
-        'Leading development of secure, scalable microservices platforms using Go, .NET 8, Vue.js and Angular with Azure cloud deployment, CI/CD automation and enterprise-grade payment and workflow integrations.'
+        'Leading development of secure, scalable microservices platforms using .NET 8, ASP.NET Core, Go, Vue.js and Angular with Azure cloud deployment, CI/CD automation and enterprise-grade payment and workflow integrations.'
+    },
+    {
+      period: '2025 - Present',
+      title: 'Founder & Full Stack .NET, Flutter & AI Engineer',
+      company: 'SheikhGo / Sheikh Travel System (Own Product) — https://www.sheikhgo.com/',
+      details:
+        'Building my own multi-tenant fleet and travel product end-to-end: ASP.NET Core APIs and Angular ERP with AI integration — AI Copilot, provider-configurable LLM APIs, OCR document extraction — plus Flutter fleet/driver apps with role-based nav, live GPS, trips, attendance and offline-ready field ops.'
     },
     {
       period: 'May 2023 - Feb 2025',
@@ -276,7 +314,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
   contact: {
     heading: "Let's work together!",
     blurb:
-      'Open to Lead Full Stack Engineer roles focused on secure payroll, payment platforms and cloud-native systems using Go, Vue.js and .NET.',
+      'Open to Lead Full Stack .NET Engineer roles focused on secure payroll, payment and fleet platforms with AI integration using .NET 8, ASP.NET Core, Angular, Vue.js and Flutter.',
     phoneSectionTitle: 'My Phone Numbers',
     phones: [
       { display: '+92301-6169209', href: 'tel:+923016169209' },
@@ -299,9 +337,9 @@ export const PORTFOLIO_DATA: PortfolioData = {
     ]
   },
   seo: {
-    title: 'Ali Raza Tahir | Lead Full Stack Engineer',
+    title: 'Ali Raza Tahir | Lead Full Stack .NET Engineer',
     description:
-      'Portfolio of Ali Raza Tahir, Lead Full Stack Engineer with 7+ years building secure payroll and payment platforms using Go, Vue.js, .NET 8, microservices and cloud-native architectures.',
+      'Portfolio of Ali Raza Tahir, Lead Full Stack .NET Engineer with 8+ years building secure payroll, payment and fleet platforms with .NET 8, ASP.NET Core, AI integration, Angular, Flutter and Azure.',
     image: '/profile.png',
     url: 'https://www.linkedin.com/in/ali-raza-tahir-0601b21ab/'
   }
