@@ -1,0 +1,7 @@
+/* Home page section helpers */
+.arch-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}

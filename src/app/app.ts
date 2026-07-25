@@ -1,39 +1,21 @@
-import { animate, query, stagger, style, transition, trigger } from '@angular/animations';
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit, signal } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { PORTFOLIO_DATA } from './data/portfolio.data';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './app.html',
-  styleUrl: './app.css',
-  animations: [
-    trigger('sectionStagger', [
-      transition(':enter', [
-        query(
-          '.animate-section',
-          [
-            style({ opacity: 0, transform: 'translateY(18px)' }),
-            stagger(90, [
-              animate(
-                '460ms cubic-bezier(0.16, 1, 0.3, 1)',
-                style({ opacity: 1, transform: 'translateY(0)' })
-              )
-            ])
-          ],
-          { optional: true }
-        )
-      ])
-    ])
-  ]
+  styleUrl: './app.css'
 })
 export class App implements OnInit {
   private readonly themeKey = 'portfolio-theme';
 
   protected readonly portfolio = PORTFOLIO_DATA;
   protected readonly darkMode = signal(true);
+  protected readonly year = new Date().getFullYear();
 
   constructor(
     @Inject(DOCUMENT) private readonly document: Document,
@@ -51,14 +33,8 @@ export class App implements OnInit {
     this.applyTheme();
   }
 
-  protected onImageError(event: Event): void {
-    const target = event.target as HTMLImageElement | null;
-    if (!target) {
-      return;
-    }
-    if (!target.src.endsWith('/projects/default-project.svg')) {
-      target.src = '/projects/default-project.svg';
-    }
+  protected scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   private initializeTheme(): void {
