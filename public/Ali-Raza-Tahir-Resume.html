@@ -22,7 +22,18 @@
     .sidebar {
       background: #0f172a;
       color: #e2e8f0;
-      padding: 12mm 6mm 10mm;
+      padding: 10mm 6mm 10mm;
+    }
+    .photo {
+      width: 38mm;
+      height: 38mm;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      margin: 0 auto 8px;
+      border: 2.5px solid rgba(167, 139, 250, 0.55);
+      box-shadow: 0 0 0 3px rgba(15, 23, 42, 1);
     }
     .sidebar h1 {
       font-size: 16pt;
@@ -30,6 +41,7 @@
       letter-spacing: -0.02em;
       color: #fff;
       line-height: 1.12;
+      text-align: center;
     }
     .sidebar .role {
       margin-top: 3px;
@@ -38,6 +50,7 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #a78bfa;
+      text-align: center;
     }
     .sidebar .tagline {
       margin-top: 8px;
@@ -122,6 +135,7 @@
 <body>
   <div class="page">
     <aside class="sidebar">
+      <img class="photo" src="ali-raza-tahir-photo.jpg" alt="Ali Raza Tahir" />
       <h1>Ali Raza<br/>Tahir</h1>
       <p class="role">Lead Full Stack .NET Engineer</p>
       <p class="tagline">
