@@ -3,21 +3,21 @@ import { PortfolioData } from '../models/portfolio.model';
 export const PORTFOLIO_DATA: PortfolioData = {
   hero: {
     name: 'Ali Raza Tahir',
-    title: 'Senior Full Stack Engineer (.NET | Flutter | Angular | React | Azure)',
+    title: 'Senior Full Stack Developer (.NET Core | React | Angular | Azure / OCI)',
     headline: 'Ali Raza Tahir',
     tagline:
-      '8+ years building scalable enterprise applications, mobile apps, AI-powered systems and cloud solutions — specializing in .NET 8, ASP.NET Core, Flutter and Azure.',
-    badges: ['.NET 8', 'ASP.NET Core', 'Flutter', 'Angular', 'AI Integration', 'Azure'],
+      '10 years Full Stack — .NET Core, ASP.NET Core Web APIs, Microservices (MSA), React, Angular, SQL Server, Azure / OCI, Docker and CI/CD. Based in Riyadh, KSA.',
+    badges: ['.NET Core', 'Microservices', 'React', 'Angular', 'Azure / OCI', '10 Years'],
     availabilityChips: [
-      'Available for Remote',
-      'Open to Relocation',
-      'UAE Experience',
-      'Immediate Joiner'
+      'Based in Riyadh, KSA',
+      'Company Iqama',
+      'Immediate / 7 days',
+      'Full Stack · .NET · React · Angular'
     ],
     stats: [
-      { label: 'Years Experience', value: '8+' },
+      { label: 'Years Experience', value: '10' },
       { label: 'Projects Delivered', value: '20+' },
-      { label: 'Global + Remote', value: 'Yes' },
+      { label: 'Location', value: 'Riyadh, KSA' },
       { label: 'Own Product Live', value: 'SheikhGo' }
     ],
     viewProjectsHref: '#projects',
@@ -31,24 +31,24 @@ export const PORTFOLIO_DATA: PortfolioData = {
   about: {
     heading: 'About Me',
     description:
-      'Lead Full Stack .NET Engineer with 8+ years building secure payroll, payment and fleet platforms across fintech, government and enterprise — specializing in .NET 8, ASP.NET Core and C# with AI-assisted workflows and production Flutter mobile apps. Recognized with a MOHRE Certificate of Appreciation.',
+      'Senior Full Stack Developer with 10 years delivering scalable enterprise applications across fintech, government and product — strong in .NET Core, ASP.NET Core, Microservices (MSA), React, Angular, SQL Server and Azure / OCI. Based in Riyadh, KSA (Company Iqama). Recognized with a MOHRE Certificate of Appreciation.',
     highlights: [
-      'Primary stack: .NET Core / .NET 8, ASP.NET Core, C#, Blazor, Dapper / Entity Framework and SQL Server.',
-      'Also strong in Angular, Vue.js, React.js, Flutter, Go (Golang) and Azure cloud-native delivery.',
-      'AI integration: LLM provider APIs, AI Copilot, OCR document extraction and intelligent automation (SheikhGo + TechBirdsFly).',
-      'Built Flutter fleet and driver apps for multi-tenant travel operations.',
+      'Strong: .NET Core / ASP.NET Core, C#, Web APIs, SQL Server and Microservices architecture (MSA).',
+      'Strong: React and Angular — responsive, scalable enterprise web applications (TypeScript / JavaScript).',
+      'Cloud & DevOps: Azure, OCI, Docker, Kubernetes and CI/CD pipelines.',
+      'AI integration: LLM provider APIs, AI Copilot, OCR and intelligent automation (SheikhGo + TechBirdsFly).',
       'Fintech expertise: payroll processing, accounts payable automation and PCI DSS-compliant payment platforms.',
-      'Microservices, gRPC, REST APIs, OAuth / JWT and EIDA-based OTP workflows.'
+      'REST APIs, OAuth / JWT, RBAC and EIDA-based OTP workflows; Flutter mobile for fleet operations.'
     ]
   },
   skillGroups: [
     {
       category: 'Backend',
-      skills: ['.NET 8', '.NET Core', 'ASP.NET Core', 'C#', 'Web API', 'Dapper', 'EF Core', 'SignalR', 'gRPC', 'Microservices']
+      skills: ['.NET Core (Strong)', '.NET 8', 'ASP.NET Core', 'C#', 'Web API', 'Microservices / MSA (Strong)', 'Dapper', 'EF Core', 'SignalR', 'gRPC']
     },
     {
       category: 'Frontend',
-      skills: ['Angular', 'Vue.js', 'React.js', 'Blazor', 'TypeScript', 'JavaScript', 'HTML / CSS']
+      skills: ['React (Strong)', 'Angular (Strong)', 'TypeScript', 'JavaScript', 'Vue.js', 'Blazor', 'HTML / CSS']
     },
     {
       category: 'Mobile',
@@ -60,7 +60,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
     },
     {
       category: 'Cloud / DevOps',
-      skills: ['Azure', 'AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Azure DevOps']
+      skills: ['Azure', 'OCI', 'AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Azure DevOps']
     },
     {
       category: 'AI',
@@ -68,7 +68,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
     },
     {
       category: 'Security / Architecture',
-      skills: ['OAuth / JWT', 'PCI DSS', 'RBAC', 'EIDA OTP', 'CQRS', 'Clean Architecture', 'Event-Driven']
+      skills: ['OAuth / JWT', 'PCI DSS', 'RBAC', 'EIDA OTP', 'Microservices / MSA', 'CQRS', 'Clean Architecture', 'Event-Driven']
     }
   ],
   ai: {
@@ -353,7 +353,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
   contact: {
     heading: "Let's work together!",
     blurb:
-      'Open to Senior / Lead Full Stack .NET Engineer roles worldwide — remote or relocation — focused on enterprise, fintech, fleet and AI-enabled products.',
+      'Senior Full Stack Developer (.NET Core · React · Angular · Microservices) based in Riyadh, KSA — open to KSA onsite and regional roles. Immediate / 7-day notice.',
     phoneSectionTitle: 'My Phone Numbers',
     phones: [
       { display: '+92301-6169209', href: 'tel:+923016169209' },
@@ -364,9 +364,9 @@ export const PORTFOLIO_DATA: PortfolioData = {
       display: 'Ali.raza.tahir@hotmail.com',
       href: 'mailto:Ali.raza.tahir@hotmail.com'
     },
-    location: 'Pakistan · Open to All Countries & Remote',
-    timezone: 'PKT (UTC+5) · Flexible for global overlap (EU / US / Middle East / APAC)',
-    availability: 'Immediate joiner · Available for remote interviews worldwide',
+    location: 'Riyadh, KSA · Company Iqama · Pakistani National',
+    timezone: 'AST (UTC+3) · Available for KSA business hours',
+    availability: 'Immediate joiner / 7 days notice · Available for interviews',
     links: [
       {
         label: 'Schedule Interview',
@@ -384,9 +384,9 @@ export const PORTFOLIO_DATA: PortfolioData = {
     ]
   },
   seo: {
-    title: 'Ali Raza Tahir | Senior Full Stack .NET & Flutter Developer',
+    title: 'Ali Raza Tahir | Senior Full Stack Developer (.NET Core · React · Angular)',
     description:
-      'Senior Full Stack Engineer with 8+ years of experience in .NET, Flutter, Angular, React, Azure, AI and enterprise solutions. Open to remote roles worldwide · own product SheikhGo.',
+      'Senior Full Stack Developer with 10 years experience in .NET Core, ASP.NET Core, Microservices, React, Angular, SQL Server, Azure / OCI. Based in Riyadh, KSA · own product SheikhGo.',
     image: '/profile.jpg',
     url: 'https://www.linkedin.com/in/ali-raza-tahir-0601b21ab/'
   }

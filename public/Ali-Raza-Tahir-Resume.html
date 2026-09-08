@@ -8,139 +8,136 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 8.4pt;
-      line-height: 1.28;
+      font-size: 8pt;
+      line-height: 1.26;
       color: #1e293b;
       background: #fff;
     }
     .page {
       display: grid;
-      grid-template-columns: 68mm 1fr;
-      min-height: 297mm;
+      grid-template-columns: 66mm 1fr;
       width: 210mm;
+      min-height: 297mm;
+      page-break-after: always;
     }
+    .page:last-child { page-break-after: auto; }
     .sidebar {
       background: #0f172a;
       color: #e2e8f0;
-      padding: 10mm 6mm 10mm;
+      padding: 9mm 5.5mm 8mm;
     }
     .photo {
-      width: 38mm;
-      height: 38mm;
+      width: 36mm;
+      height: 36mm;
       border-radius: 50%;
       object-fit: cover;
       object-position: center top;
       display: block;
-      margin: 0 auto 8px;
-      border: 2.5px solid rgba(167, 139, 250, 0.55);
-      box-shadow: 0 0 0 3px rgba(15, 23, 42, 1);
+      margin: 0 auto 7px;
+      border: 2px solid rgba(167, 139, 250, 0.55);
     }
     .sidebar h1 {
-      font-size: 16pt;
+      font-size: 14.5pt;
       font-weight: 800;
-      letter-spacing: -0.02em;
       color: #fff;
-      line-height: 1.12;
+      line-height: 1.1;
       text-align: center;
     }
     .sidebar .role {
       margin-top: 3px;
-      font-size: 7.8pt;
+      font-size: 6.5pt;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
       color: #a78bfa;
       text-align: center;
+      line-height: 1.3;
     }
     .sidebar .tagline {
-      margin-top: 8px;
-      font-size: 7.4pt;
+      margin-top: 6px;
+      font-size: 7pt;
       color: #cbd5e1;
-      line-height: 1.4;
+      line-height: 1.35;
     }
     .sidebar h2 {
-      margin-top: 12px;
-      margin-bottom: 5px;
-      font-size: 7.5pt;
-      letter-spacing: 0.14em;
+      margin-top: 9px;
+      margin-bottom: 3px;
+      font-size: 7pt;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: #a78bfa;
       border-bottom: 1px solid rgba(167, 139, 250, 0.35);
       padding-bottom: 2px;
     }
-    .contact-item, .chip {
-      font-size: 7.4pt;
+    .contact-item, .chip, .check {
+      font-size: 7pt;
       color: #e2e8f0;
-      margin-bottom: 3px;
+      margin-bottom: 2px;
       word-break: break-word;
     }
-    .chips { display: flex; flex-wrap: wrap; gap: 4px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 3px; }
     .chip {
       border: 1px solid rgba(167, 139, 250, 0.4);
       background: rgba(139, 92, 246, 0.15);
       border-radius: 999px;
-      padding: 2px 7px;
-      margin-bottom: 0;
+      padding: 2px 5px;
       color: #ddd6fe;
+      font-size: 6.5pt;
     }
-    .edu .school { font-weight: 700; color: #fff; font-size: 8.5pt; }
-    .edu .meta { color: #94a3b8; font-size: 7.5pt; margin-top: 2px; }
-    .award { font-size: 8pt; color: #e2e8f0; }
-    .award strong { color: #fff; display: block; margin-bottom: 2px; }
-    .main { padding: 10mm 8mm 8mm 7mm; }
+    .check { font-size: 6.8pt; margin-bottom: 1.5px; }
+    .edu .school { font-weight: 700; color: #fff; font-size: 7.8pt; }
+    .edu .meta { color: #94a3b8; font-size: 7pt; margin-top: 1px; }
+    .award { font-size: 7.2pt; color: #e2e8f0; }
+    .award strong { color: #fff; display: block; }
+    .main { padding: 8mm 6mm 7mm 5.5mm; }
     .main h2 {
-      font-size: 8.6pt;
-      letter-spacing: 0.12em;
+      font-size: 7.8pt;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #5b21b6;
       border-bottom: 1.5px solid #c4b5fd;
       padding-bottom: 2px;
-      margin-bottom: 5px;
-      margin-top: 8px;
+      margin: 5px 0 3px;
     }
     .main h2:first-child { margin-top: 0; }
-    .summary { color: #334155; font-size: 8pt; line-height: 1.35; }
+    .summary { font-size: 7.5pt; line-height: 1.32; color: #334155; }
     .skills-grid {
       display: grid;
-      grid-template-columns: 24mm 1fr;
-      gap: 3px 6px;
-      font-size: 8.2pt;
+      grid-template-columns: 26mm 1fr;
+      gap: 2px 4px;
+      font-size: 7.3pt;
     }
     .skills-grid .label {
       font-weight: 700;
       color: #5b21b6;
+      font-size: 6.5pt;
       text-transform: uppercase;
-      font-size: 7.2pt;
-      letter-spacing: 0.04em;
-      padding-top: 1px;
     }
-    .job { margin-bottom: 5px; }
+    .job { margin-bottom: 4px; page-break-inside: avoid; }
     .job-head {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      gap: 8px;
+      gap: 6px;
     }
-    .job-title { font-weight: 800; font-size: 8.8pt; color: #0f172a; }
-    .job-dates { font-size: 7.2pt; color: #64748b; white-space: nowrap; }
-    .job-company { font-size: 7.6pt; color: #6d28d9; font-weight: 600; margin-top: 0; }
-    ul { margin: 2px 0 0 12px; }
-    li { margin-bottom: 1px; color: #334155; }
-    .proj { margin-bottom: 4px; }
-    .proj-title { font-weight: 700; color: #0f172a; }
-    .proj-tech { font-size: 7pt; color: #7c3aed; margin-top: 1px; }
-    .proj-desc { color: #334155; margin-top: 1px; }
+    .job-title { font-weight: 800; font-size: 7.8pt; color: #0f172a; }
+    .job-dates { font-size: 6.6pt; color: #64748b; white-space: nowrap; }
+    .job-company { font-size: 7.1pt; color: #6d28d9; font-weight: 600; }
+    .job-tag { font-size: 6.4pt; color: #64748b; font-style: italic; }
+    ul { margin: 1px 0 0 10px; }
+    li { margin-bottom: 0.8px; font-size: 7.2pt; color: #334155; line-height: 1.28; }
   </style>
 </head>
 <body>
+
   <div class="page">
     <aside class="sidebar">
       <img class="photo" src="ali-raza-tahir-photo.jpg" alt="Ali Raza Tahir" />
       <h1>Ali Raza<br/>Tahir</h1>
-      <p class="role">Lead Full Stack .NET Engineer</p>
+      <p class="role">Senior Full Stack Developer · .NET · React · Angular</p>
       <p class="tagline">
-        Building secure, scalable payroll, payment &amp; fleet platforms with .NET 8 / ASP.NET Core,
-        AI integration, Angular, Flutter and Azure — 8+ years across fintech, government and enterprise.
+        10 years Full Stack — .NET Core, ASP.NET Core Web APIs, Microservices (MSA), React, Angular,
+        SQL Server, Azure / OCI, Docker &amp; CI/CD. Based in Riyadh, KSA.
       </p>
 
       <h2>Contact</h2>
@@ -149,97 +146,94 @@
       <p class="contact-item">+92 317-7368305</p>
       <p class="contact-item">linkedin.com/in/ali-raza-tahir</p>
       <p class="contact-item">github.com/alirazatahir1234</p>
+      <p class="contact-item">Riyadh, KSA · Company Iqama</p>
+      <p class="contact-item">Immediate / 7 days notice</p>
+      <p class="contact-item">Pakistani · English (Fluent) · Urdu</p>
 
       <h2>Core Stack</h2>
       <div class="chips">
-        <span class="chip">.NET 8</span>
+        <span class="chip">.NET Core (Strong)</span>
         <span class="chip">ASP.NET Core</span>
-        <span class="chip">C#</span>
-        <span class="chip">Blazor</span>
-        <span class="chip">Angular</span>
-        <span class="chip">Vue.js</span>
-        <span class="chip">Flutter</span>
-        <span class="chip">AI Integration</span>
-        <span class="chip">Azure Cloud</span>
+        <span class="chip">C# · Web API</span>
+        <span class="chip">Microservices / MSA</span>
+        <span class="chip">React (Strong)</span>
+        <span class="chip">Angular (Strong)</span>
+        <span class="chip">TypeScript · JS</span>
         <span class="chip">SQL Server</span>
-        <span class="chip">Microservices</span>
-        <span class="chip">Go (Golang)</span>
-        <span class="chip">Payroll &amp; Payments</span>
-        <span class="chip">PCI DSS</span>
-        <span class="chip">8+ Years</span>
+        <span class="chip">Azure / OCI</span>
+        <span class="chip">Docker · CI/CD</span>
+        <span class="chip">10 Years</span>
       </div>
+
+      <h2>Strengths</h2>
+      <p class="check">✔ .NET Core / ASP.NET Core (Strong)</p>
+      <p class="check">✔ Microservices architecture — MSA (Strong)</p>
+      <p class="check">✔ React — responsive, scalable apps (Strong)</p>
+      <p class="check">✔ Angular — enterprise apps (Strong)</p>
+      <p class="check">✔ Azure / OCI cloud delivery</p>
+      <p class="check">✔ REST APIs · SQL Server · Docker</p>
 
       <h2>Education</h2>
       <div class="edu">
-        <p class="school">BSCS</p>
+        <p class="school">BS Computer Science</p>
         <p class="meta">University of Gujrat</p>
-        <p class="meta">Sep 2015 – Jun 2019 · Gujrat, Pakistan</p>
+        <p class="meta">Sep 2015 – Jun 2019</p>
       </div>
 
-      <h2>Awards</h2>
+      <h2>Recognition</h2>
       <div class="award">
         <strong>Certificate of Appreciation</strong>
-        Ministry of Human Resources &amp; Emiratisation, UAE — September 2025
+        MOHRE, UAE — Sep 2025
       </div>
     </aside>
 
     <main class="main">
       <h2>Professional Summary</h2>
       <p class="summary">
-        Lead Full Stack .NET Engineer with 8+ years delivering secure, scalable payroll, payment and fleet
-        platforms across fintech, government and enterprise. Primary expertise in .NET 8, ASP.NET Core, C#,
-        Blazor and SQL Server, with strong Angular, Vue.js, Flutter, AI integration (LLM APIs, OCR, copilots)
-        and Azure cloud-native delivery. Proven ability to lead teams, ship production APIs and mobile apps,
-        and architect PCI DSS-compliant systems at scale.
+        Senior Full Stack Developer with 10 years of experience designing and delivering scalable web applications
+        using .NET Core / ASP.NET Core, C#, Web APIs, SQL Server and Microservices architecture (MSA). Strong in
+        React and Angular for responsive enterprise frontends (TypeScript / JavaScript, HTML, CSS). Hands-on cloud
+        delivery on Azure and OCI, with Docker and CI/CD pipelines. Proven across fintech/payments, UAE government
+        and enterprise modernization. Currently based in Riyadh, KSA (Company Iqama); immediate / 7-day notice.
       </p>
 
       <h2>Technical Skills</h2>
       <div class="skills-grid">
-        <div class="label">.NET / Backend</div>
-        <div>.NET 8 · .NET Core · ASP.NET Core · C# · Blazor · gRPC · REST APIs · Microservices</div>
-        <div class="label">Languages</div>
-        <div>C# · TypeScript · JavaScript · Dart · Go (Golang) · SQL</div>
+        <div class="label">Backend</div>
+        <div>.NET Core (Strong) · ASP.NET Core · .NET 8 · C# · Web API · Microservices / MSA (Strong) · gRPC · SignalR</div>
         <div class="label">Frontend</div>
-        <div>Angular · Vue.js · React.js · Blazor · Telerik UI · HTML / CSS</div>
-        <div class="label">Mobile</div>
-        <div>Flutter · Riverpod · Dio · Firebase · Google Maps · SignalR · Hive</div>
+        <div>React (Strong) · Angular (Strong) · TypeScript · JavaScript · HTML · CSS · Vue.js · Blazor</div>
+        <div class="label">Cloud</div>
+        <div>Azure · OCI (Oracle Cloud Infrastructure) · Docker · Kubernetes · CI/CD · Azure DevOps · Git</div>
         <div class="label">Data</div>
-        <div>SQL Server · PostgreSQL · Oracle · Dapper · Entity Framework</div>
-        <div class="label">Messaging</div>
-        <div>RabbitMQ · Kafka · Redis · SignalR</div>
-        <div class="label">Cloud / DevOps</div>
-        <div>Azure · AWS · Docker · Kubernetes · CI/CD · Azure DevOps</div>
-        <div class="label">AI</div>
-        <div>AI Integration · LLM / Provider APIs · AI Copilot · OCR / Document AI</div>
-        <div class="label">Security</div>
-        <div>OAuth 2.0 / JWT · PCI DSS · RBAC · EIDA OTP · Biometrics</div>
+        <div>SQL Server · T-SQL · Entity Framework · Dapper · Oracle · PostgreSQL · Redis</div>
         <div class="label">Architecture</div>
-        <div>CQRS · Clean Architecture · DDD · Event-Driven</div>
+        <div>Microservices (MSA) · REST APIs · Clean Architecture · CQRS · Event-Driven · OAuth 2.0 / JWT · RBAC</div>
       </div>
 
       <h2>Professional Experience</h2>
 
       <article class="job">
         <div class="job-head">
-          <div class="job-title">Lead Full Stack Engineer</div>
-          <div class="job-dates">Jan 2025 – Present</div>
+          <div class="job-title">Lead Full Stack .NET / React / Angular Engineer</div>
+          <div class="job-dates">Jan 2025 – Aug 2026</div>
         </div>
-        <div class="job-company">Abu Dhabi Ports — Remote</div>
+        <div class="job-company">Abu Dhabi Ports — Onsite, UAE</div>
         <ul>
-          <li>Leading architecture of secure payment and workflow platforms using .NET 8, ASP.NET Core, Go, Vue.js and Angular on Azure (Docker, Kubernetes, CI/CD).</li>
-          <li>Implementing OAuth 2.0 / JWT and RBAC across microservices; mentoring engineers and driving code-review standards.</li>
+          <li>Lead full-stack delivery of payment and workflow platforms using .NET Core / ASP.NET Core Web APIs, Microservices (MSA), React and Angular on Azure with Docker and CI/CD.</li>
+          <li>Design REST integrations and secure OAuth 2.0 / JWT services; mentor engineers on maintainable MSA patterns.</li>
         </ul>
       </article>
 
       <article class="job">
         <div class="job-head">
-          <div class="job-title">Founder &amp; Full Stack .NET, Flutter &amp; AI Engineer</div>
+          <div class="job-title">Founder &amp; Full Stack .NET / Angular Engineer</div>
           <div class="job-dates">2025 – Present</div>
         </div>
-        <div class="job-company">SheikhGo / Sheikh Travel System — Own Product · www.sheikhgo.com · github.com/alirazatahir1234/Sheikh-Travel-System</div>
+        <div class="job-company">SheikhGo / Sheikh Travel System — www.sheikhgo.com</div>
         <ul>
-          <li>Building my own multi-tenant fleet/travel product end-to-end: ASP.NET Core APIs, Angular ERP, AI Copilot, OCR and LLM provider APIs.</li>
-          <li>Shipped Flutter fleet/driver apps with role-based nav, live GPS, trips, attendance, fuel/inspections and offline field sync.</li>
+          <li>Build multi-tenant ERP with ASP.NET Core Web APIs, Angular (TypeScript), SQL Server, SignalR, Azure/Docker CI/CD — live at www.sheikhgo.com.</li>
+          <li>Ship GPS/trips, driver-vehicle ops, RBAC, AI Copilot / OCR and Flutter field apps; microservice-style API boundaries for scalable Full Stack delivery.</li>
         </ul>
       </article>
 
@@ -248,44 +242,78 @@
           <div class="job-title">Senior Software Engineer</div>
           <div class="job-dates">May 2023 – Feb 2025</div>
         </div>
-        <div class="job-company">Ministry of Human Resources &amp; Emiratisation — UAE</div>
+        <div class="job-company">Ministry of Human Resources &amp; Emiratisation (MOHRE) — UAE</div>
         <ul>
-          <li>Delivered government payroll and MOHRE Wallet modules; EIDA OTP, RBAC and secure API integrations at national scale.</li>
-          <li>Led workflow automation reducing manual processing by 60%; awarded Certificate of Appreciation (Sep 2025).</li>
+          <li>Developed mission-critical .NET Core / .NET 8 applications, Web APIs and SQL Server/Oracle data layers for government payroll and Wallet.</li>
+          <li>Delivered secure REST integrations and workflow automation; collaborated through UAT. Certificate of Appreciation — Sep 2025.</li>
         </ul>
       </article>
 
       <article class="job">
         <div class="job-head">
-          <div class="job-title">Software Engineer – Fintech &amp; Payments</div>
+          <div class="job-title">Software Engineer — Fintech / Microservices</div>
           <div class="job-dates">Apr 2022 – Feb 2023</div>
         </div>
         <div class="job-company">EBizCharge — Remote</div>
         <ul>
-          <li>Built high-volume payroll/AP payment platform with Go microservices, gRPC and PCI DSS-compliant architecture.</li>
-          <li>Delivered Vue.js and Blazor/Telerik dashboards; OAuth 2.0 / JWT across distributed payment services.</li>
+          <li>Engineered high-volume payment platforms using microservices architecture, .NET and REST/gRPC under PCI DSS.</li>
+          <li>Built responsive dashboards (Vue.js / Blazor) and SQL Server reporting for scalable financial workflows.</li>
         </ul>
       </article>
 
       <article class="job">
         <div class="job-head">
-          <div class="job-title">Technical Solutions Consultant</div>
+          <div class="job-title">Technical Solutions Consultant <span class="job-tag">· Part-time · Contract</span></div>
           <div class="job-dates">May 2022 – Dec 2022</div>
         </div>
         <div class="job-company">Telebu Communications — Remote</div>
         <ul>
-          <li>Architected IVR, call routing and campaign automation with CRM/ticketing integrations and React/Vue analytics dashboards.</li>
+          <li>Developed React and Vue.js responsive web apps and REST integrations for IVR, CRM and campaign automation.</li>
+        </ul>
+      </article>
+    </main>
+  </div>
+
+  <div class="page">
+    <aside class="sidebar">
+      <img class="photo" src="ali-raza-tahir-photo.jpg" alt="Ali Raza Tahir" />
+      <h1>Ali Raza<br/>Tahir</h1>
+      <p class="role">Senior Full Stack · .NET Core · React · Angular</p>
+      <p class="tagline">10 years · Riyadh, KSA · Immediate joiner</p>
+      <h2>Highlight</h2>
+      <p class="check">✔ .NET Core / MSA (Strong)</p>
+      <p class="check">✔ React &amp; Angular (Strong)</p>
+      <p class="check">✔ Azure / OCI</p>
+      <p class="check">✔ SQL Server · REST · Docker</p>
+      <h2>Availability</h2>
+      <p class="contact-item">Riyadh, KSA</p>
+      <p class="contact-item">Company Iqama</p>
+      <p class="contact-item">Notice: Immediate / 7 days</p>
+    </aside>
+
+    <main class="main">
+      <h2>Professional Experience</h2>
+
+      <article class="job">
+        <div class="job-head">
+          <div class="job-title">Senior Software Engineer — .NET Core + Angular</div>
+          <div class="job-dates">May 2021 – May 2022</div>
+        </div>
+        <div class="job-company">Macrosoft — Lahore, Pakistan (Maersk engagement)</div>
+        <ul>
+          <li>Modernized legacy FoxPro AP/AR modules to .NET Core + Angular microservices-ready architecture (~3× performance).</li>
+          <li>Implemented RabbitMQ/Kafka messaging, Redis and Azure DevOps CI/CD; SharePoint Online SPFx customizations.</li>
         </ul>
       </article>
 
       <article class="job">
         <div class="job-head">
-          <div class="job-title">Software Developer</div>
-          <div class="job-dates">May 2021 – May 2022</div>
+          <div class="job-title">Software Developer — Microservices</div>
+          <div class="job-dates">May 2020 – Jul 2021</div>
         </div>
-        <div class="job-company">Macrosoft — Lahore, Pakistan</div>
+        <div class="job-company">Techverx — Lahore, Pakistan</div>
         <ul>
-          <li>Led Visual FoxPro → .NET Core + Angular modernization (3× performance); RabbitMQ/Kafka/Redis via Azure DevOps CI/CD.</li>
+          <li>Architected .NET Core microservices (ABP.IO) and REST APIs for bookings and payments; Jenkins CI/CD and cloud deployments.</li>
         </ul>
       </article>
 
@@ -296,20 +324,65 @@
         </div>
         <div class="job-company">University of Sialkot — Sialkot, Pakistan</div>
         <ul>
-          <li>Built ERP, LMS, EMS and Library systems (ASP.NET MVC, EF, SQL Server) with RBAC and audit logging for 3,000+ users.</li>
+          <li>Built ASP.NET MVC ERP modules with SQL Server, HTML/CSS/JavaScript for 3,000+ users; REST APIs and RBAC.</li>
         </ul>
       </article>
 
-      <h2>Selected Project</h2>
-      <div class="proj">
-        <div class="proj-title">SheikhGo — Own Product (Fleet ERP + Flutter + AI)</div>
-        <div class="proj-tech">.NET 8 · ASP.NET Core · Flutter · AI Integration · LLM APIs · OCR · Angular · SignalR · www.sheikhgo.com</div>
-        <div class="proj-desc">
-          My own multi-tenant fleet/travel product at www.sheikhgo.com: ASP.NET Core + Angular ERP with AI Copilot/OCR, plus Flutter fleet/driver apps
-          (live GPS, trips, attendance, offline workflows). Also building TechBirdsFly — AI-powered SaaS website builder (.NET).
-        </div>
-      </div>
+      <h2>Selected Projects</h2>
+
+      <article class="job">
+        <div class="job-title">SheikhGo — Multi-Tenant Fleet &amp; Travel Platform (Own Product · Live)</div>
+        <div class="job-company">www.sheikhgo.com · github.com/alirazatahir1234/Sheikh-Travel-System</div>
+        <ul>
+          <li>Built end-to-end multi-tenant fleet/travel ERP: Angular SPA, ASP.NET Core Web APIs, SQL Server, SignalR realtime and Azure/Docker CI/CD.</li>
+          <li>Delivered live GPS/trip analytics, driver &amp; vehicle management, maintenance/compliance modules, multi-tenant RBAC and audit trails.</li>
+          <li>Integrated AI Copilot (provider-configurable LLM APIs), OCR document extraction and Flutter fleet/driver apps with offline-ready field sync.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-title">Dynamic Web Service — Metadata-Driven APIs (Angular + React)</div>
+        <div class="job-company">github.com/alirazatahir1234/Dynamic-Web-Service-App · .NET · Angular · React</div>
+        <ul>
+          <li>Designed ASP.NET Core Web API with metadata-driven dynamic endpoints (Entity/Field definitions) so new entities can be added without hard-coded controllers.</li>
+          <li>Built dual frontends — Angular and React (Hooks) — that render forms and grids from API metadata (Bootstrap UI, EF Core, SQL Server).</li>
+          <li>Exposed full CRUD via dynamic routes (list metadata, create/update/delete entities) demonstrating MSA-friendly, reusable API + SPA patterns.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-title">TechBirdsFly — AI-Powered SaaS Website Builder</div>
+        <div class="job-company">github.com/alirazatahir1234/TechBirdsFly · TechBirdsApi · TechBirds-Frontend</div>
+        <ul>
+          <li>Developing AI-assisted website generation and multi-service SaaS workflows on .NET APIs with automation-oriented delivery.</li>
+          <li>Integrating intelligent automation into product workflows across shared API and frontend repositories.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-title">JobSystem — .NET Full Stack Job Platform (ASP.NET Core + React)</div>
+        <div class="job-company">github.com/alirazatahir1234/JobSystem</div>
+        <ul>
+          <li>Built ASP.NET Core Web API + React/TypeScript app with SQL Server, EF Core, JWT auth and Docker deployment for UAE-focused job search workflows.</li>
+          <li>Implemented skill matching for .NET stacks, filtering, application tracking and integrations with regional job portals.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-title">RabbitMQ Generic Producer API</div>
+        <div class="job-company">github.com/alirazatahir1234/RabbitMQGenericAPI-master</div>
+        <ul>
+          <li>Implemented reusable .NET Web API producer for asynchronous messaging with RabbitMQ — supporting microservices event/publish patterns.</li>
+        </ul>
+      </article>
+
+      <h2>Education</h2>
+      <p class="summary">BS Computer Science — University of Gujrat · Sep 2015 – Jun 2019</p>
+
+      <h2>Certifications &amp; Recognition</h2>
+      <p class="summary">Certificate of Appreciation — MOHRE, UAE · September 2025</p>
     </main>
   </div>
+
 </body>
 </html>
